@@ -16,7 +16,7 @@ public class employee
         }
         else
         {
-            if (x.ViewName() == s)
+            if (x.ViewName().equals(s))
             {
                 return x;
             }

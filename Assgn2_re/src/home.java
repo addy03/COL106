@@ -7,13 +7,13 @@ public class home {
     public static void main(String args[]) {
         // String workingDir = System.getProperty("user.dir");
         // System.out.println("Current working directory : " + workingDir);
-        employee emp = new employee("CEO");
         try {
-            Scanner input = new Scanner(new File(args[0]));
+            employee emp = new employee("CEO");
+            Scanner input = new Scanner(new File("test12.txt"));
 
             String answer = input.nextLine();
             int val = Integer.parseInt(answer);
-            for (int i = 0; i < val; i++) {
+            for (int i = 0; i < val-1; i++) {
                 answer = input.nextLine();
                 String[] splited = answer.split(" ");
                 emp.AddEmployee(splited[0], splited[1]);
